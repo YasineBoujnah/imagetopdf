@@ -1,27 +1,65 @@
-# Imagetopdf
+# Image to PDF Converter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A modern, fast, and secure Angular web application that converts images into a multi-page PDF directly in your browser.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Multi-Image Support**: Upload and combine multiple images (PNG, JPG/JPEG, WebP) into a single PDF document.
+- **Client-Side Processing**: Fast and private conversion handled completely inside the browser using jsPDF — no images are sent to an external server.
+- **Live Image Previews**: Preview uploaded images in a responsive grid before converting.
+- **Easy Management**: Remove unwanted images with a single click.
+- **Aspect Ratio Preservation**: Automatically scales each image proportionally to fit standard PDF pages cleanly.
+- **Modern UI/UX**: Clean, responsive layout with smooth gradients and interactive feedback.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io/) (v16+)
+- [jsPDF](https://github.com/parallax/jsPDF)
+- TypeScript, HTML5, CSS3
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) (v16.14.0 or higher recommended)
+- [Angular CLI](https://github.com/angular/angular-cli) (`npm install -g @angular/cli`)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/imagetopdf.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd imagetopdf
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Development Server
 
-## Further help
+Run the development server:
+```bash
+ng serve
+```
+Navigate to `http://localhost:4200/` in your browser. The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Build
+
+Run the build command to generate production-ready static assets in the `dist/` folder:
+```bash
+ng build
+```
+
+## How to Use
+
+1. Click the upload zone or drag and drop your images into the app.
+2. Review the selected images in the preview section (remove any if needed).
+3. Click the **Generate PDF** button to download your combined PDF.
+
+## License
+
+This project is licensed under the MIT License.
